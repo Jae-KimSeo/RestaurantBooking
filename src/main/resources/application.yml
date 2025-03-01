@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: RestaurantBooking
+  
+  # 데이터소스 설정
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  
+  # H2 콘솔 설정
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  
+  # JPA 설정
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# 서버 설정
+server:
+  port: 8090
+
+# 로깅 설정
+logging:
+  level:
+    org.springframework: INFO
+    org.service.restaurantbooking: DEBUG
+    org.hibernate.SQL: DEBUG 
