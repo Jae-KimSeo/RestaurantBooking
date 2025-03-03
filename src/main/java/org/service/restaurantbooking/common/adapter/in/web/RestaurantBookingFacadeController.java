@@ -1,7 +1,7 @@
-package org.service.restaurantbooking.controller;
+package org.service.restaurantbooking.common.adapter.in.web;
 
 import lombok.RequiredArgsConstructor;
-import org.service.restaurantbooking.service.RestaurantBookingFacade;
+import org.service.restaurantbooking.common.application.service.RestaurantBookingFacade;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

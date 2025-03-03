@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Builder
 @AllArgsConstructor
@@ -17,6 +19,8 @@ public class Restaurant {
     private int capacity;
     private String cuisine;
     private String operatingHours;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     
     // 예약 관련 필드
     private boolean acceptsBookings;

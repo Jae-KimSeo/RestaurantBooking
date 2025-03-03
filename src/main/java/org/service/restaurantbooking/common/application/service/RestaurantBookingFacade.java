@@ -1,4 +1,4 @@
-package org.service.restaurantbooking.service;
+package org.service.restaurantbooking.common.application.service;
 
 import lombok.RequiredArgsConstructor;
 import org.service.restaurantbooking.booking.application.port.in.GetBookingUseCase;

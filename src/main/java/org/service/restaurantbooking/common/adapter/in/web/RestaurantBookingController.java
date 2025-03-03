@@ -1,12 +1,12 @@
-package org.service.restaurantbooking.controller;
+package org.service.restaurantbooking.common.adapter.in.web;
 
 import lombok.RequiredArgsConstructor;
 import org.service.restaurantbooking.booking.adapter.in.web.BookingRequest;
 import org.service.restaurantbooking.booking.adapter.in.web.BookingResponse;
 import org.service.restaurantbooking.booking.application.port.in.GetBookingUseCase;
 import org.service.restaurantbooking.booking.domain.Booking;
+import org.service.restaurantbooking.common.application.service.BookingIntegrationService;
 import org.service.restaurantbooking.restaurant.application.port.in.GetRestaurantUseCase;
-import org.service.restaurantbooking.service.BookingIntegrationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
